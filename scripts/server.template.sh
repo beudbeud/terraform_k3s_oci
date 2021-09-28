@@ -15,7 +15,7 @@ while ! nc -z localhost 6443; do
   sleep 1
 done
 
-mkdir /home/opc/.kube
-cp /etc/rancher/k3s/k3s.yaml /home/opc/.kube/config
-sed -i "s/127.0.0.1/$(curl -s ifconfig.co)/g" /home/opc/.kube/config
-chown opc:opc /home/opc/.kube/ -R
+mkdir /home/ubuntu/.kube
+cp /etc/rancher/k3s/k3s.yaml /home/ubuntu/.kube/config
+sed -i "s/127.0.0.1/$(curl -s ifconfig.co)/g" /home/ubuntu/.kube/config
+chown ubuntu:ubuntu /home/opc/.kube/ -R
